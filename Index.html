@@ -3,73 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ronash Hub - Key System</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2e2e4f);
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      padding: 30px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
-    }
-    h1 {
-      color: #ff4444;
-      margin-bottom: 10px;
-    }
-    input {
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      width: 80%;
-      margin: 10px 0;
-    }
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      background: #ff4444;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #ff2222;
-    }
-    .discord {
-      margin-top: 20px;
-    }
-    a {
-      color: #00aaff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Ronash Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Ronash Hub</h1>
-    <p>Enter your key below to continue:</p>
-    <input type="text" id="keyInput" placeholder="Enter your key">
-    <br>
-    <button onclick="checkKey()">Submit</button>
-    <p id="status"></p>
-    <div class="discord">
-      <p>Need help? Join our Discord:</p>
-      <a href="https://discord.gg/nBMb3dh7" target="_blank">Ronash Hub Discord</a>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">RonashHub</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#key">Key System</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Welcome to Ronash Hub</h1>
+    <p>Your one-stop hub for projects and ideas</p>
+    <a href="#projects">View Projects</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Who I Am</h3>
+        <p>I am a web developer passionate about building amazing experiences.</p>
+      </div>
+      <div class="card">
+        <h3>Skills</h3>
+        <p>HTML, CSS, JavaScript, GitHub, Responsive Design, UI/UX Design.</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>Create clean, modern, and user-friendly websites that leave a lasting impression.</p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="content">
+      <div class="card project-card">
+        <h3>Project 1</h3>
+        <p>Example project description goes here.</p>
+      </div>
+      <div class="card project-card">
+        <h3>Project 2</h3>
+        <p>Example project description goes here.</p>
+      </div>
+      <div class="card project-card">
+        <h3>Project 3</h3>
+        <p>Example project description goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key System Section -->
+  <section id="key">
+    <h2>Key System</h2>
+    <div class="container">
+      <p>Enter your key below to continue:</p>
+      <input type="text" id="keyInput" placeholder="Enter your key">
+      <button onclick="checkKey()">Submit</button>
+      <p id="status"></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/jonashstudio" target="_blank">github.com/jonashstudio</a></p>
+      </div>
+      <div class="card">
+        <h3>Discord</h3>
+        <p><a href="https://discord.gg/nBMb3dh7" target="_blank">Join our Discord</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 RonashHub. All Rights Reserved.</p>
+  </footer>
 
   <script>
     function checkKey() {
@@ -84,5 +114,6 @@
       }
     }
   </script>
+
 </body>
 </html>
